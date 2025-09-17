@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inventario Repuestos Autos</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>📦 Inventario Repuestos Autos</h1>
+
+<div>
+  <input type="text" id="searchInput" placeholder="🔍 Buscar">
+  <select id="filterCategory">
+    <option value="">Todas categorías</option>
+    <option value="Motor">Motor</option>
+    <option value="Frenos">Frenos</option>
+    <option value="Suspensión">Suspensión</option>
+    <option value="Eléctrico">Eléctrico</option>
+    <option value="Refrigeración">Refrigeración</option>
+    <option value="Carrocería">Carrocería</option>
+    <option value="Iluminación">Iluminación</option>
+    <option value="Transmisión">Transmisión</option>
+    <option value="Ruedas">Ruedas</option>
+  </select>
+</div>
+
+<h2>➕ Agregar / Editar Producto</h2>
+<form id="productForm">
+  <input type="hidden" id="productId">
+  <input type="text" id="nombre" placeholder="Nombre del repuesto" required>
+  <select id="categoria" required>
+    <option value="">Categoría</option>
+    <option value="Motor">Motor</option>
+    <option value="Frenos">Frenos</option>
+    <option value="Suspensión">Suspensión</option>
+    <option value="Eléctrico">Eléctrico</option>
+    <option value="Refrigeración">Refrigeración</option>
+    <option value="Carrocería">Carrocería</option>
+    <option value="Iluminación">Iluminación</option>
+    <option value="Transmisión">Transmisión</option>
+    <option value="Ruedas">Ruedas</option>
+  </select>
+  <input type="number" id="cantidad" placeholder="Cantidad" required>
+  <select id="estado" required>
+    <option value="Stock OK">Stock OK</option>
+    <option value="Bajo stock">Bajo stock</option>
+  </select>
+  <button type="submit">Guardar</button>
+  <button type="button" id="cancelEdit">Cancelar</button>
+</form>
+
+<table id="inventoryTable">
+  <thead>
+    <tr>
+      <th>Repuesto</th>
+      <th>Categoría</th>
+      <th>Cantidad</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h2>📊 Estadísticas</h2>
+<canvas id="chartStock"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

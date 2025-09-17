@@ -1,0 +1,11 @@
+body { font-family: Arial; background: #1e1e2f; color: #fff; padding: 20px;}
+h1,h2{color:#00d9ff;text-align:center;}
+input,select,button{padding:6px;border-radius:6px;background:#2e2e3e;color:#fff;border:none;margin:5px;}
+table{width:100%;border-collapse:collapse;margin-top:20px;}
+th,td{padding:10px;text-align:center;}
+th{background:#00d9ff;color:#000;}
+tr:nth-child(even){background:#2e2e3e;}
+tr:hover{background:#3b3b5c;}
+.alert-low{background:#ff4d4d;padding:5px;border-radius:5px;}
+.alert-ok{background:#4caf50;padding:5px;border-radius:5px;}
+button{cursor:pointer;}
