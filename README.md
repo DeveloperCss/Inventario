@@ -4,7 +4,7 @@ Esta es una **página web interactiva** para gestionar el inventario de repuesto
 
 
 🌐 **Visita la página en vivo:**  
-👉 [Autos Clásicos - Ver Online](https://DeveloperCss.github.io/Inventario/)
+👉 [Autos Clásicos - Ver Online](https://DeveloperCss.github.io/inventario/)
 ---
 
 ## 🌟 Funcionalidades
